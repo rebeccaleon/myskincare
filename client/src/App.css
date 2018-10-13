@@ -1,0 +1,59 @@
+.App-header {
+  background-color:#43186B;
+  color: #F3EEEC;
+  text-align: left;
+  padding: 25px 0;
+}
+
+.App-header h1 {
+  font-family: 'Oswald';
+  font-size: 3.8em;
+  max-width: 960px;
+  margin: auto;
+}
+
+.App-header p {
+  max-width: 960px;
+  margin: auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Quiz-header {
+  background-color: #F3EEEC;
+}
+
+.Quiz-header h2 {
+  font-family: 'Oswald';
+  font-size: 3em;
+  color: #43186B;
+  text-align: center;
+}
+
+.Quiz-header p {
+  font-family: 'Open Sans';
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.Quiz {
+  background-color: #F3EEEC;
+  max-width: 960px;
+  margin: auto;
+}
+
+.result {
+  font-size: 1.8em;
+  color: #7382B9;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
