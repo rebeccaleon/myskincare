@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import quizQuestions from '../../api/quizQuestions.js'
 import Quiz from '../utils/Quiz.js';
 import Result from '../utils/Result.js';
-import '../../App.css'
+import '../../App.css';
+import '../../index.css'
 
 class MyQuiz extends Component {
   constructor(props) {
@@ -122,19 +123,22 @@ class MyQuiz extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-        <h1>Ready to Glow?</h1>
-        <p>Cat ipsum dolor sit amet, damn that dog and you call this cat food Gate keepers of hell. Eat and than sleep on your face pet my belly, you know you want to; seize the hand and shred it!</p>
+      <div>
+      <section class="section section-lg bg-gradient-info">
+        <div class="container">
+          <div class="col-lg-8">
+            <h1 class="display-3 text-white">myskincare<sup>&copy;</sup> quiz</h1>
+          </div>
         </div>
+      </section>
+      <div class="container">
         <div className="Quiz-header">
-          <h2>Skin Quiz</h2>
-          <p>Happier skin starts here. <br/>
-            Take this quiz to learn your skin type!</p>
+          <p>Take this quiz to learn your skin type!</p>
         </div>
         <div className="Quiz">
           {this.state.result ? this.renderResult() : this.renderQuiz()}
         </div>
+      </div>
       </div>
     )
   }

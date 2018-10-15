@@ -1,59 +1,113 @@
-.App-header {
-  background-color:#43186B;
-  color: #F3EEEC;
-  text-align: left;
-  padding: 25px 0;
-}
+/* ~ QUIZ ~ */
 
-.App-header h1 {
-  font-family: 'Oswald';
-  font-size: 3.8em;
-  max-width: 960px;
-  margin: auto;
-}
-
-.App-header p {
-  max-width: 960px;
-  margin: auto;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.Quiz-header {
-  background-color: #F3EEEC;
-}
-
-.Quiz-header h2 {
-  font-family: 'Oswald';
-  font-size: 3em;
-  color: #43186B;
-  text-align: center;
-}
-
-.Quiz-header p {
-  font-family: 'Open Sans';
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.Quiz {
-  background-color: #F3EEEC;
-  max-width: 960px;
-  margin: auto;
-}
-
-.result {
-  font-size: 1.8em;
-  color: #7382B9;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+/* Result Component */
+  .result {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Quiz Component */
+  .answerOptions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-}
+  
+  /* QuestionCount Component */
+  .questionCount {
+    padding: 1.5rem 2.5rem 0;
+    font-size: 14px;
+  }
+  
+  /* Question Component */
+  .question {
+    margin: 0;
+    padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  }
+  
+  /* AnswerOption Component */
+  .answerOption {
+    border-top: 1px solid #eee;
+  }
+  
+  .answerOption:hover {
+    background-color: #d2ffeb;
+  }
+  
+  .radioCustomButton {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+  }
+  
+  .radioCustomButton,
+  .radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .radioCustomLabel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 2.5rem 1.5rem 5rem;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .radioCustomButton ~ .radioCustomLabel:before {
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .radioCustomButton:checked ~ .radioCustomLabel:before {
+    content: '';
+    background: #2dce89 url(./components/img/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #2dce89;
+  }
+  
+  /* Animation */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+  }
+  
+  .fade-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-appear {
+    opacity: 0;
+  }
+  
+  .fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+ 

@@ -2,17 +2,24 @@ import React from "react";
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-      Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-      imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
-      Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-      consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-      fames ac ante ipsum primis in faucibus.
-    </p>
+    <section class="section section-lg bg-gradient-primary">
+      <div class="container">
+        <div class="col-lg-8">
+          <h1 class="display-3 text-white">myskincare<sup>&copy;</sup> <span> Make your skin happy</span></h1>
+          <p class="lead text-white">Take a short quiz to get personalized product recommendations for your skin type.</p>
+          <div class="btn-wrapper">
+            <a href="/skinquiz" class="btn btn-info mb-3 mb-sm-0">
+              <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
+              <span class="btn-inner--text">Take the Quiz</span>
+            </a>
+            <a href="#" class="btn btn-white mb-3 mb-sm-0">
+              <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+              <span class="btn-inner--text">Skincare Shop</span>
+            </a>
+            </div>
+        </div>
+      </div>
+    </section>
   </div>
 );
 
