@@ -1,4 +1,7 @@
 /* ~ QUIZ ~ */
+.Quiz {
+  margin-bottom: 75px;
+}
 
 /* Result Component */
   .result {
@@ -110,4 +113,14 @@
     transition: opacity 0.5s ease-in-out;
   }
 
- 
+  /* Shop Buttons */
+  .section {
+    margin-bottom: 50px;
+  }
+  .row .col-sm {
+    margin: 10px;
+  }
+
+  .row .col-sm .btn {
+    width: 150px;
+  }

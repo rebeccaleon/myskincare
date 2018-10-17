@@ -18,6 +18,11 @@ const Home = () => (
         </div>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <p>Puma tiger yet birman, singapura so devonshire rex so burmese. Jaguar puma. Birman tomcat singapura, for singapura. Ocelot puma and bobcat tabby for persian. Kitten devonshire rex. Ragdoll bobcat. Kitten egyptian mau or puma havana brown. Cougar ocelot or siamese himalayan. Munchkin havana brown for cheetah. American bobtail bobcat and tiger, cougar lynx or tiger. Jaguar maine coon. Lion panther cougar.</p>
+      </div>
+    </section>
   </div>
 );
 

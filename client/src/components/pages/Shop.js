@@ -15,24 +15,24 @@ const Shop = () => (
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <span>Oily</span>
+                <a class="btn btn-outline-danger" href="/shop/oily" role="button">Oily</a>
                 </div>
                 <div class="col-sm">
-                    <span>Dry</span>
+                <a class="btn btn-outline-info" href="/shop/dry" role="button">Dry</a>
                 </div>
                 <div class="col-sm">
-                    <span>Combination</span>
+                <a class="btn btn-outline-warning" href="/shop/combination" role="button">Combination</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <span>Normal</span>
+                <a class="btn btn-outline-success" href="/shop/normal" role="button">Normal</a>
                 </div>
                 <div class="col-sm">
-                    <span>Sensitive</span>
+                <a class="btn btn-outline-primary" href="/shop/sensitive" role="button">Sensitive</a>
                 </div>
                 <div class="col-sm">
-                    <span>Shop All</span>
+                <a class="btn btn-outline-default" href="/shop/all" role="button">Shop All</a>
                 </div>
             </div>
         </div>
