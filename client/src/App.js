@@ -11,6 +11,8 @@ import ShopNormal from "./components/pages/ShopNormal";
 import ShopSensitive from "./components/pages/ShopSensitive";
 import Nav from "./components/utils/Nav";
 import Footer from "./components/utils/Footer";
+import SignUp from "./components/utils/SignUp";
+import LoginForm from "./components/utils/LoginForm";
 
 const App = () => (
   <Router>
@@ -24,9 +26,11 @@ const App = () => (
         <Route exact path="/shop/combination" component={ShopCombination} />
         <Route exact path="/shop/normal" component={ShopNormal} />
         <Route exact path="/shop/sensitive" component={ShopSensitive} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/skinquiz" component={SkinQuiz} />
-      </Switch>
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/skinquiz" component={SkinQuiz} />
+        <Route exact path="/signup" component ={SignUp} />  
+        <Route path="/login"render={() =><LoginForm updateUser={this.updateUser}/>}/>  
+        </Switch>
       <Footer/>
     </div>
   </Router>
