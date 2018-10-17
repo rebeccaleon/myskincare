@@ -1,6 +1,8 @@
 import React from "react";
 import '../../App.css';
-import '../../index.css'
+import '../../index.css';
+import Products from "../utils/Products";
+
 
 const ShopDry = () => (
     <div>
@@ -11,6 +13,9 @@ const ShopDry = () => (
             <p className="lead text-white">Feeling dry and tight all day, with a regular occurrence of flaky patches? You're dealing with dry skin. Cure the dryness with these intensely hydrating products.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Products/>
       </section>
     </div>
   );

@@ -38,14 +38,13 @@ const Nav = () => (
         <li className="nav-item dropdown">
           <a href="#" className="nav-link" data-toggle="dropdown" href="#" role="button">
             <i className="ni ni-ui-04 d-lg-none"></i>
-            <span className="nav-link-inner--text">About</span>
+            <span className="nav-link-inner--text">Skincare Quiz</span>
           </a>
           <div className="dropdown-menu dropdown-menu-xl">
             <div className="dropdown-menu-inner">
               
                 <div className="media-body ml-3">
-                  <h5 className="heading text-warning mb-md-1">About</h5>
-                  <p className="description d-none d-md-inline-block mb-0">This is a beginner friendly skincare app!</p>
+                  <h5 className="heading text-warning mb-md-1"><a href="/skinquiz">Get Started!</a></h5>
                 </div>
             </div>
           </div>

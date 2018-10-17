@@ -34,7 +34,7 @@ class SignUp extends Component {
 			.then(response => {
 				console.log(response)
 				if (!response.data.errmsg) {
-					console.log('successful signup')
+					alert('successful signup')
 					this.setState({ //redirect to login page
 						redirectTo: '/login'
 					})
@@ -51,6 +51,7 @@ class SignUp extends Component {
 
 render() {
 	return (
+	<div class="container">
 		<div className="SignupForm">
 			<h4>Sign up</h4>
 			<form className="form-horizontal">
@@ -84,12 +85,11 @@ render() {
 					</div>
 				</div>
 				<div className="form-group ">
-					<div className="col-7"></div>
-					<button className="btn btn-primary col-1 col-mr-auto"onClick={this.handleSubmit} type="submit">Sign Up</button>
+					<button className="btn btn-primary"onClick={this.handleSubmit} type="submit">Sign Up</button>
 				</div>
 			</form>
 		</div>
-
+	</div>
 	)
 }
 }

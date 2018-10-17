@@ -7,6 +7,7 @@ function Result(props) {
     <div className="result">
       You have <strong>{props.quizResult}</strong> skin!<br/>
       <Link to={`/shop/${props.quizResult}`}>Shop products for {props.quizResult} skin</Link>
+      <section><Link to={'/signup'}>Sign Up </Link></section>
     </div>
   );
 }

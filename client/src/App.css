@@ -124,3 +124,8 @@
   .row .col-sm .btn {
     width: 150px;
   }
+
+  .result {
+    padding: 50px;
+    font-size: 1.5em;
+  }

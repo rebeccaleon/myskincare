@@ -1,6 +1,8 @@
 import React from "react";
 import '../../App.css';
-import '../../index.css'
+import '../../index.css';
+import Products from "../utils/Products";
+
 
 const ShopSensitive = () => (
     <div>
@@ -11,6 +13,9 @@ const ShopSensitive = () => (
             <p className="lead text-white">People with sensitive skin should use gentle skin cleansers and moisturizers with minimal ingredients and stay away from fragrances. All your soothing needs are covered here.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Products/>
       </section>
     </div>
   );

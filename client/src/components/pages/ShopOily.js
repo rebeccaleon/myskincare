@@ -1,6 +1,8 @@
 import React from "react";
 import '../../App.css';
-import '../../index.css'
+import '../../index.css';
+import Products from "../utils/Products";
+
 
 const ShopOily = () => (
     <div>
@@ -11,6 +13,9 @@ const ShopOily = () => (
             <p className="lead text-white">If your skin is persistently shiny starting from the morning and you have pores present across your cheeks, chin and forehead, you have oily skin. Control excess oil, prevent acne and treat enlarged pores with these oil-fighting products.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Products/>
       </section>
     </div>
   );

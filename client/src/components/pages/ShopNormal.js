@@ -1,6 +1,8 @@
 import React from "react";
 import '../../App.css';
-import '../../index.css'
+import '../../index.css';
+import Products from "../utils/Products";
+
 
 const ShopNormal = () => (
     <div>
@@ -11,6 +13,9 @@ const ShopNormal = () => (
             <p className="lead text-white">A normal skin type may typically never complain about having a greasy face, except maybe on a hot summer day when they have an oily T-zone. If that's your case, find your product soulmates here.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Products/>
       </section>
     </div>
   );

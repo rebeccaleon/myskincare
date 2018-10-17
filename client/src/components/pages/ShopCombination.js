@@ -1,6 +1,8 @@
 import React from "react";
 import '../../App.css';
-import '../../index.css'
+import '../../index.css';
+import '../utils/Products'
+import Products from "../utils/Products";
 
 const ShopCombination = () => (
     <div>
@@ -11,6 +13,9 @@ const ShopCombination = () => (
             <p className="lead text-white">If your T-zone is often oily while your cheeks are dry, you have combination skin. Find the perfect balancing products here.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Products/>
       </section>
     </div>
   );
