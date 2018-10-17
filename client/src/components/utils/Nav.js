@@ -3,7 +3,7 @@ import React from 'react';
 const Nav = () => (
   <nav class="navbar navbar-expand-lg navbar-dark bg-default">
   <div class="container">
-    <a class="navbar-brand" href="#">myskincare</a>
+    <a class="navbar-brand" href="/">myskincare</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

@@ -16,10 +16,10 @@ class MyQuiz extends Component {
      answerOptions: [],
      answer: '',
      answersCount: {
-      Oily: 0,
-      Combination: 0,
-      Dry: 0,
-      Sensitive: 0
+      oily: 0,
+      combination: 0,
+      dry: 0,
+      sensitive: 0
      },
      result: ''
     };
@@ -98,7 +98,7 @@ class MyQuiz extends Component {
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {
-      this.setState({ result: 'Normal'});
+      this.setState({ result: 'normal'});
     }
   }
 
@@ -128,13 +128,11 @@ class MyQuiz extends Component {
         <div class="container">
           <div class="col-lg-8">
             <h1 class="display-3 text-white">myskincare<sup>&copy;</sup> quiz</h1>
+            <p class="lead text-white">Take a short quiz to get personalized product recommendations for your skin type.</p>
           </div>
         </div>
       </section>
       <div class="container">
-        <div className="Quiz-header">
-          <p>Take this quiz to learn your skin type!</p>
-        </div>
         <div className="Quiz">
           {this.state.result ? this.renderResult() : this.renderQuiz()}
         </div>
